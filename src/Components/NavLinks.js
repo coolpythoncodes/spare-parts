@@ -17,7 +17,7 @@ const NavLinks = ({ navLink, color }) => {
 
     const Link = styled.a`
         color:${returnColor(color)};
-        padding-right:1rem;
+        margin-right:1.5rem;
     `;
 
     return (

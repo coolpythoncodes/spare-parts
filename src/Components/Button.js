@@ -39,6 +39,7 @@ const Button = ({ text,color,backgroundColor, border }) => {
         width:142px;
         height:47px;
         border-radius:23.5px;
+        margin-right:1.5rem;
         background-color:${returnBgColor(backgroundColor)};
         // border: 1px solid #000;
         // ${(border) => border && `
