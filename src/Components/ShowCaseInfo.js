@@ -1,4 +1,4 @@
-import Button from "./Button";
+import NavBarButton from "./Button/NavBarButton";
 import '../Sass/showcaseinfo.scss';
 
 const ShowCaseInfo = () => {
@@ -10,8 +10,8 @@ const ShowCaseInfo = () => {
                     <h1>Buy spare parts at your ease</h1>
                     <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
                     <div className="buttons">
-                        <Button text='Get it on Playstore'/>
-                        <Button text='Download on the Applestore'/>
+                        <NavBarButton text='Get it on Playstore'/>
+                        <NavBarButton text='Download on the Applestore'/>
                     </div>
                 </div>
                 <div className="showcase-right">
