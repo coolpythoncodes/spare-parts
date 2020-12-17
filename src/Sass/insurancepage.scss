@@ -1,3 +1,123 @@
-#insurance-page{
+@import 'config';
+
+body{
     background: #e5e5e5;
+    font-family: Mulish;
+}
+
+.showcase-a{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // display: grid;
+    // grid-template-columns: 40% 60%;
+    // align-items: center;
+    // height: 100vh;
+    // border: 1px solid yellow;
+    // width: 80%;
+    // margin: auto;
+
+    &-left{
+        // border: 1px solid green;
+        // height: 100%;
+        // flex: 1;
+        // margin-right: 10rem;
+        h1{
+            font-size: 48px;
+            line-height: 62px;
+            // margin-top: 10rem;
+            padding-bottom: 30px;
+            width: 396px;
+        }
+        .showcase-btn-section{
+            display: flex;
+            // justify-content: space-between;
+            align-items: center;
+
+            .arrow-right{
+                width: 24px;
+                margin-left: 13px;
+            }
+
+            span{
+                padding: 0 1rem;
+            }
+        }
+    }
+
+    &-right{
+        height: 100%;
+        // flex:2;
+        // width: 100%;
+        // height: 100%;
+        // justify-self: end;
+        // height: 100%;
+        // width: 100%;
+        // border: 1px solid red;
+
+        .showcase-image{
+            // width: 80%;
+            // height: 80%;
+            // border: 1px solid blue;
+            // display: inline-block;
+            // margin-right: auto;
+            
+        }
+    }
+}
+
+.showcase-b{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+
+    &-left{
+        background: url('../assests/rectangle_circle.svg') no-repeat;
+        background-size: 100%;
+        background-position: center center;
+
+        // position: relative;
+        // background: #000;
+        height: 100%;
+        width: 100%;
+        img{
+            display: none;
+        }
+        // .car-image{
+        //     position: absolute;
+        //     top: 10rem;
+        //     width: 70%;
+        //     height: 60%;
+        //     right:0;
+        // }
+    }
+
+    &-right{
+        
+        h1{
+            font-size: 36px;
+            line-height: 37px;
+            margin-bottom: 18px;
+            width: 272px;
+        }
+
+        p{
+            width: 205px;
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 2rem;
+        }
+    }
 }

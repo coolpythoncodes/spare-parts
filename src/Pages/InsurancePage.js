@@ -1,18 +1,70 @@
-import Button from '../Components/Button'
-import NavBar from '../Components/NavBar'
-import NavLinks from '../Components/NavLinks'
-import '../Sass/insurancepage.scss'
+import Button from '../Components/Button/Button';
+import NavBar from '../Components/NavBar';
+import NavBarButton from '../Components/Button/NavBarButton';
+import NavLinks from '../Components/NavLinks';
+
+import '../Sass/insurancepage.scss';
+
+import ArrowRight from '../assests/arrow-right.svg'
+import ShowCaseImage from '../assests/showcase.png';
+import CarMaintenanceImage from '../assests/car_maintenance.png';
+import RectangleCircleImage from '../assests/rectangle_circle.svg'
+
 
 const InsurancePage = () => {
     return (
-        <div id='insurance-page'>
+        <div>
             <NavBar>
-                <NavLinks navLink='Packages' color='#033C49'/>
-                <NavLinks navLink='About' color='#033C49'/>
-                <NavLinks navLink='Contact' color='#033C49'/>
-                <Button text='Register' color='#033C49' backgroundColor='#E5E5E5' border/>
-                <Button text='Login' backgroundColor='#f9811e'/>
+                <NavLinks navLink='Packages' color='#033C49' />
+                <NavLinks navLink='About' color='#033C49' />
+                <NavLinks navLink='Contact' color='#033C49' />
+                <NavBarButton text='Register' color='#033C49' backgroundColor='#E5E5E5' border />
+                <NavBarButton text='Login' backgroundColor='#f9811e' />
             </NavBar>
+            <section className="showcase-a">
+                <div className="showcase-a-left">
+                    <h1>We help insure your vehicle with our best stations.</h1>
+                    <div className="showcase-btn-section">
+                        <Button 
+                            backgroundColor='#0091B3'
+                            width='150'
+                            height='50'
+                        >
+                            Get Started 
+                            <img className='arrow-right' src={ArrowRight} alt=""/> 
+                        </Button> 
+                        <span>or</span>  
+                        <Button 
+                            color='#FE895D' 
+                            width='114'
+                            border
+                            borderColor='#FE895D'
+                        >
+                            Make Inquiry
+                        </Button>
+                    </div>
+                </div>
+                <div className="showcase-a-right">
+                    <img className='showcase-image' src={ShowCaseImage} alt=""/>
+                </div>
+            </section>
+
+            <section className="showcase-b">
+                <div className="showcase-b-left">
+                    <img src={RectangleCircleImage} alt=""/>
+                    <img className='car-image' src={CarMaintenanceImage} alt=""/>
+                </div>
+                <div className="showcase-b-right">
+                    <h1>Simple, smarter insurance.</h1>
+                    <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                    <Button 
+                        backgroundColor='#0091B3'
+                        width='133'
+                    >
+                        See Packages
+                    </Button>
+                </div>
+            </section>
         </div>
     );
 }
