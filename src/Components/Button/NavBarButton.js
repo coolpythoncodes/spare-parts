@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const NavBarButton = ({ text,color,backgroundColor, border }) => {
-    // If a color prop is not passed, the default color of the NavLink is #fff
+    // If a color prop is not passed, the default color of the NavBarButton is #fff
 
     const returnColor = (val) => {
         const colorTestReg = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
@@ -15,7 +15,7 @@ const NavBarButton = ({ text,color,backgroundColor, border }) => {
         }
       };
 
-    // If a backgroundColor prop is not passed, the default color of the NavLink is #fff
+    // If a backgroundColor prop is not passed, the default color of the NavBarButton is #fff
 
 
     const returnBgColor = (val) => {
