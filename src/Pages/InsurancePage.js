@@ -8,7 +8,6 @@ import '../Sass/insurancepage.scss';
 import ArrowRight from '../assests/arrow-right.svg'
 import ShowCaseImage from '../assests/showcase.png';
 import CarMaintenanceImage from '../assests/car_maintenance.png';
-import RectangleCircleImage from '../assests/rectangle_circle.svg'
 
 
 const InsurancePage = () => {
@@ -51,7 +50,6 @@ const InsurancePage = () => {
 
             <section className="showcase-b">
                 <div className="showcase-b-left">
-                    <img src={RectangleCircleImage} alt=""/>
                     <img className='car-image' src={CarMaintenanceImage} alt=""/>
                 </div>
                 <div className="showcase-b-right">

@@ -84,24 +84,18 @@ body{
     height: 100vh;
 
     &-left{
-        background: url('../assests/rectangle_circle.svg') no-repeat;
-        background-size: 100%;
-        background-position: center center;
+        // background: url('../assests/car_maintenance.png') no-repeat;
+        // background-size: 100%;
+        // background-position: center center;
 
-        // position: relative;
-        // background: #000;
-        height: 100%;
-        width: 100%;
-        img{
-            display: none;
+        // // position: relative;
+        // // background: #000;
+        // height: 100%;
+        // width: 100%;
+        
+        .car-image{
+           
         }
-        // .car-image{
-        //     position: absolute;
-        //     top: 10rem;
-        //     width: 70%;
-        //     height: 60%;
-        //     right:0;
-        // }
     }
 
     &-right{
