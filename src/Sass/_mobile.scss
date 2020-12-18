@@ -1,0 +1,20 @@
+@include mediaLg{
+    .showcase-a{
+        height: 50vh;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1;
+
+        &-left{
+
+            h1{
+                width: 300px;
+                line-height: 1.4;
+                font-size: 2rem;
+            }
+        }
+        
+        &-right{
+            height: 70%;
+        }
+    }
+}
