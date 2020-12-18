@@ -22,6 +22,35 @@
     }
 }
 
-// @include mediaMd {
+@include mediaMd {
+    .showcase-a{
+        grid-template-columns: repeat(2, 1fr);
+        height: 60vh;
 
-// }
+        &-left{
+            // border: 1px solid red;
+            h1{
+                width: unset;
+                font-size:1.5rem;
+                line-height: 1.4;
+            }
+            &-right{
+                height: 70%;
+            }
+
+            .showcase-btn-section{
+                // display: flex;
+                // align-items: center;
+    
+                // .arrow-right{
+                //     width: 24px;
+                //     margin-left: 13px;
+                // }
+                    
+                span, .inquiry-btn{
+                    display: none;
+                }
+            }
+        }
+    }
+}

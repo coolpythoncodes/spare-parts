@@ -33,14 +33,17 @@ const InsurancePage = () => {
                             <img className='arrow-right' src={ArrowRight} alt=""/> 
                         </Button> 
                         <span>or</span>  
-                        <Button 
-                            color='#FE895D' 
-                            width='114'
-                            border
-                            borderColor='#FE895D'
-                        >
-                            Make Inquiry
-                        </Button>
+                        <div className="inquiry-btn">
+                            <Button 
+                                color='#FE895D' 
+                                width='114'
+                                border
+                                borderColor='#FE895D'
+                                className='inquiry-btn'
+                            >
+                                Make Inquiry
+                            </Button>
+                        </div>
                     </div>
                 </div>
                 <div className="showcase-a-right">
