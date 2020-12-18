@@ -1,7 +1,9 @@
-// For Ipad and tablets devices
+// For Ipad 
 @include mediaLg {
     .showcase-a{
-        // height: 50vh;
+        min-height: 50vh;
+        // height: 90vh;
+        margin-top: 0;
         grid-template-columns: repeat(2, 1fr);
         gap: 1;
 
