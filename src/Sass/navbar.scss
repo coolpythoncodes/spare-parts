@@ -2,13 +2,15 @@
 
 .navbar{
     display: flex;
+    position: fixed;
+    top: 0;
+    background: #e5e5e5;
+    width: 100%;
     flex-direction: row;
     align-items: center;
-    max-width: 90%;
-    margin: auto;
     justify-content: center;
-    padding-top: 2rem;
-    
+    padding: 2rem; 
+    // border: 1px solid red;   
 
     #logo{
         flex: 0.9;
