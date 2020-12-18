@@ -1,6 +1,7 @@
-@include mediaLg{
+// For Ipad and tablets devices
+@include mediaLg {
     .showcase-a{
-        height: 50vh;
+        // height: 50vh;
         grid-template-columns: repeat(2, 1fr);
         gap: 1;
 
@@ -12,9 +13,13 @@
                 font-size: 2rem;
             }
         }
-        
+
         &-right{
             height: 70%;
         }
     }
 }
+
+// @include mediaMd {
+
+// }
