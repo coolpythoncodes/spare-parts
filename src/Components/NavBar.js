@@ -1,12 +1,13 @@
-import { Close, Menu } from '@material-ui/icons';
 import '../Sass/navbar.scss';
 
 const NavBar = ({ children,onToggle,menuToggle }) => {
 
     return (
        <>
-        <div className="menu-btn" onClick={onToggle}>
-            {!menuToggle ? <Menu fontSize='large' /> : <Close fontSize='large' />}
+        <div className={`menu-btn ${menuToggle ? 'close' : null}`} onClick={onToggle}>
+            <div className="menu-btn-line"></div>
+            <div className="menu-btn-line"></div>
+            <div className="menu-btn-line"></div>
         </div>
          <div className='navbar'>
            <div id="logo">Logo</div> 
