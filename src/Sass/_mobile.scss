@@ -1,8 +1,7 @@
 // For Ipad 
-@include mediaLg {
+@media screen and (min-width: 768px) and (max-width: 1170px) {
     .showcase-a{
         min-height: 50vh;
-        // height: 90vh;
         margin-top: 0;
         grid-template-columns: repeat(2, 1fr);
         gap: 1;
@@ -22,13 +21,14 @@
     }
 }
 
-@include mediaMd {
+@media screen and (max-width: 768px) {
+
     .showcase-a{
         grid-template-columns: repeat(2, 1fr);
         height: 60vh;
 
         &-left{
-            // border: 1px solid red;
+
             h1{
                 width: unset;
                 font-size:1.5rem;
@@ -39,18 +39,55 @@
             }
 
             .showcase-btn-section{
-                // display: flex;
-                // align-items: center;
-    
-                // .arrow-right{
-                //     width: 24px;
-                //     margin-left: 13px;
-                // }
-                    
+                                 
                 span, .inquiry-btn{
                     display: none;
                 }
             }
         }
     }
+
+
+}
+
+@media screen and (max-width: 767px){
+
+    .menu-btn{
+        display: block;
+    }
+
+    .navbar{
+
+        ul{
+            display: block;
+            position:fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 50%;
+            background: #e5e5e5;
+            padding: 80px 30px;
+            border-right: 1px solid #ccc;
+            transform: translate(-500px);
+            transition: transform 0.5s ease-in-out;
+
+            &.show{
+                transform: translate(0px);
+            }
+            
+            li{
+                padding: 20px 10px;
+                border-bottom: 1px solid #ccc;
+                font-size: 14px;
+
+                &:last-child, &:nth-child(4){
+                    border-bottom: none;
+                }
+            }
+            
+           
+        }
+
+    }
+
 }

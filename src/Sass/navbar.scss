@@ -22,10 +22,12 @@
     ul{
         display: flex;
         align-items: center;
-        min-width: 500px;
+        // min-width: 500px;
         justify-content: space-around;
         font-family: Mulish;
         font-size: 14px;
         font-weight: 400;
     }
 }
+
+@import 'mobile';

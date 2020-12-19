@@ -17,8 +17,8 @@ const InsurancePage = () => {
                 <NavLinks navLink='Packages' color='#033C49' />
                 <NavLinks navLink='About' color='#033C49' />
                 <NavLinks navLink='Contact' color='#033C49' />
-                <NavBarButton text='Register' color='#033C49' backgroundColor='#E5E5E5' border />
-                <NavBarButton text='Login' backgroundColor='#f9811e' />
+                <li><NavBarButton text='Register' color='#033C49' backgroundColor='#E5E5E5' border /></li>
+                <li><NavBarButton text='Login' backgroundColor='#f9811e' /></li>
             </NavBar>
             <section className="showcase-a">
                 <div className="showcase-a-left">
@@ -39,7 +39,6 @@ const InsurancePage = () => {
                                 width='114'
                                 border
                                 borderColor='#FE895D'
-                                className='inquiry-btn'
                             >
                                 Make Inquiry
                             </Button>
