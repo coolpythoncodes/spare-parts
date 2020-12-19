@@ -64,7 +64,7 @@
             top: 0;
             left: 0;
             height: 100%;
-            width: 70%;
+            width: 50%;
             background: #e5e5e5;
             padding: 80px 30px;
             border-right: 1px solid #ccc;
@@ -72,7 +72,7 @@
             transition: transform 0.5s ease-in-out;
 
             &.show{
-                transform: translate(0px);
+                transform: translate(0);
             }
             
             li{
@@ -80,7 +80,7 @@
                 border-bottom: 1px solid #ccc;
                 font-size: 14px;
 
-                &:last-child, &:nth-child(4){
+                &:last-child{
                     border-bottom: none;
                 }
             }

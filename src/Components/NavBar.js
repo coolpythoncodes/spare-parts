@@ -1,13 +1,7 @@
-import { useState } from 'react';
 import { Close, Menu } from '@material-ui/icons';
 import '../Sass/navbar.scss';
 
-const NavBar = ({ children }) => {
-
-    const [menuToggle, setmenuToggle] = useState(false);
-    const onToggle = () => {
-        setmenuToggle(!menuToggle);
-    }
+const NavBar = ({ children,onToggle,menuToggle }) => {
 
     return (
        <>

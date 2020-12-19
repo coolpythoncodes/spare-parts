@@ -2,7 +2,7 @@ import Button from '../Components/Button/Button';
 import NavBar from '../Components/NavBar';
 import NavBarButton from '../Components/Button/NavBarButton';
 import NavLinks from '../Components/NavLinks';
-
+import { useState } from 'react';
 import '../Sass/insurancepage.scss';
 
 import ArrowRight from '../assests/arrow-right.svg'
@@ -11,14 +11,32 @@ import CarMaintenanceImage from '../assests/car_maintenance.png';
 
 
 const InsurancePage = () => {
+
+    const [menuToggle, setmenuToggle] = useState(false);
+    const onToggle = () => {
+        setmenuToggle(!menuToggle);
+    } 
+
     return (
         <div>
-            <NavBar>
+            <NavBar 
+                menuToggle={menuToggle} 
+                onToggle={onToggle}
+            >
                 <NavLinks navLink='Packages' color='#033C49' />
                 <NavLinks navLink='About' color='#033C49' />
                 <NavLinks navLink='Contact' color='#033C49' />
-                <li><NavBarButton text='Register' color='#033C49' backgroundColor='#E5E5E5' border /></li>
-                <li><NavBarButton text='Login' backgroundColor='#f9811e' /></li>
+                {!menuToggle ? 
+                   <>
+                     <li><NavBarButton text='Register' color='#033C49' backgroundColor='#E5E5E5' border /></li>
+                     <li><NavBarButton text='Login' backgroundColor='#f9811e' /></li>
+                    </>
+                    :
+                    <>
+                        <NavLinks navLink='Register' color='#033C49' />
+                        <NavLinks navLink='Login' color='#033C49' />
+                    </>
+                }
             </NavBar>
             <section className="showcase-a">
                 <div className="showcase-a-left">
