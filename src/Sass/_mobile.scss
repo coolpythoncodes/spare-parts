@@ -129,6 +129,13 @@
         height: 100vh;
         margin-top: 1rem;
 
+        &-left{
+
+            h1{
+                padding-bottom: 20px;
+            }
+        }
+
         &-right{
             height: 50vh;
             order: -1;
