@@ -17,6 +17,19 @@ const InsurancePage = () => {
         setmenuToggle(!menuToggle);
     } 
 
+    let mql = window.matchMedia('(max-width: 767px)');
+    let mobileView = mql.matches;
+
+    const desktopNavLinks = <>
+            <li><NavBarButton text='Register' color='#033C49' backgroundColor='#E5E5E5' border /></li>
+            <li><NavBarButton text='Login' backgroundColor='#f9811e' /></li>
+        </>
+    
+    const mobileNavLinks = <>
+            <NavLinks navLink='Register' color='#033C49' />
+            <NavLinks navLink='Login' color='#033C49' />
+        </>
+
     return (
         <div>
             <NavBar 
@@ -26,17 +39,7 @@ const InsurancePage = () => {
                 <NavLinks navLink='Packages' color='#033C49' />
                 <NavLinks navLink='About' color='#033C49' />
                 <NavLinks navLink='Contact' color='#033C49' />
-                {!menuToggle ? 
-                   <>
-                     <li><NavBarButton text='Register' color='#033C49' backgroundColor='#E5E5E5' border /></li>
-                     <li><NavBarButton text='Login' backgroundColor='#f9811e' /></li>
-                    </>
-                    :
-                    <>
-                        <NavLinks navLink='Register' color='#033C49' />
-                        <NavLinks navLink='Login' color='#033C49' />
-                    </>
-                }
+                {mobileView ? mobileNavLinks : desktopNavLinks}
             </NavBar>
             <section className="showcase-a">
                 <div className="showcase-a-left">
