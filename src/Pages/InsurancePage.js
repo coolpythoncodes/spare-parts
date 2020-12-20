@@ -53,8 +53,7 @@ const InsurancePage = () => {
                 {
                     deviceWidth <= breakpoint ? mobileNavLinksComponent : desktopNavLinksComponent
                 }
-                
-                {/* {mobileView ? mobileNavLinks : desktopNavLinks} */}
+
             </NavBar>
             <section className="showcase-a">
                 <div className="showcase-a-left">
