@@ -2,7 +2,7 @@ import Button from '../Components/Button/Button';
 import NavBar from '../Components/NavBar';
 import NavBarButton from '../Components/Button/NavBarButton';
 import NavLinks from '../Components/NavLinks';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import '../Sass/insurancepage.scss';
 
 import ArrowRight from '../assests/arrow-right.svg'
@@ -17,18 +17,32 @@ const InsurancePage = () => {
         setmenuToggle(!menuToggle);
     } 
 
-    let mql = window.matchMedia('(max-width: 767px)');
-    let mobileView = mql.matches;
+    const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
+    const breakpoint = 767;
 
-    const desktopNavLinks = <>
-            <li><NavBarButton text='Register' color='#033C49' backgroundColor='#E5E5E5' border /></li>
-            <li><NavBarButton text='Login' backgroundColor='#f9811e' /></li>
-        </>
-    
-    const mobileNavLinks = <>
-            <NavLinks navLink='Register' color='#033C49' />
-            <NavLinks navLink='Login' color='#033C49' />
-        </>
+    useEffect(() => {
+        const handleWindowResize = () => setDeviceWidth(window.innerWidth);
+        window.addEventListener('resize', handleWindowResize)
+        return () => window.removeEventListener('resize', handleWindowResize)
+    }, []);
+
+
+
+    const mobileNavLinksComponent = <>
+        <NavLinks navLink='Packages' color='#033C49' />
+        <NavLinks navLink='About' color='#033C49' />
+        <NavLinks navLink='Contact' color='#033C49' />
+        <NavLinks navLink='Register' color='#033C49' />
+        <NavLinks navLink='Login' color='#033C49' />
+    </>
+
+    const desktopNavLinksComponent = <>
+        <NavLinks navLink='Packages' color='#033C49' />
+        <NavLinks navLink='About' color='#033C49' />
+        <NavLinks navLink='Contact' color='#033C49' />
+        <li><NavBarButton text='Register' color='#033C49' backgroundColor='#E5E5E5' border /></li>
+        <li><NavBarButton text='Login' backgroundColor='#f9811e' /></li>
+    </>
 
     return (
         <div>
@@ -36,10 +50,11 @@ const InsurancePage = () => {
                 menuToggle={menuToggle} 
                 onToggle={onToggle}
             >
-                <NavLinks navLink='Packages' color='#033C49' />
-                <NavLinks navLink='About' color='#033C49' />
-                <NavLinks navLink='Contact' color='#033C49' />
-                {mobileView ? mobileNavLinks : desktopNavLinks}
+                {
+                    deviceWidth <= breakpoint ? mobileNavLinksComponent : desktopNavLinksComponent
+                }
+                
+                {/* {mobileView ? mobileNavLinks : desktopNavLinks} */}
             </NavBar>
             <section className="showcase-a">
                 <div className="showcase-a-left">
