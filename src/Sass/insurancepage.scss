@@ -70,4 +70,24 @@ body{
     }
 }
 
+.how-it-works{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 211px;
+
+    h1{
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 62px;
+        margin-top: 171px;
+        margin-bottom: 23px;
+    }
+    .apply-btn{
+        display: flex;
+        justify-content: center;
+    }
+}
+
 @import 'mobile';

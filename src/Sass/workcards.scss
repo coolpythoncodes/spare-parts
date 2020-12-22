@@ -1,0 +1,12 @@
+.work-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    img{
+        width: 48px;
+    }
+}
+
+@import 'mobile';

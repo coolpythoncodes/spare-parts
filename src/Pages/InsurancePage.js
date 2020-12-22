@@ -5,9 +5,10 @@ import NavLinks from '../Components/NavLinks';
 import { useState,useEffect } from 'react';
 import '../Sass/insurancepage.scss';
 
-import ArrowRight from '../assests/arrow-right.svg'
+import ArrowRight from '../assests/arrow-right.svg';
 import ShowCaseImage from '../assests/showcase.png';
 import CarMaintenanceImage from '../assests/car_maintenance.png';
+import WorkCards from '../Components/Cards/WorkCards';
 
 
 const InsurancePage = () => {
@@ -97,6 +98,22 @@ const InsurancePage = () => {
                         width='133'
                     >
                         See Packages
+                    </Button>
+                </div>
+            </section>
+
+            <section className="how-it-works">
+                <h1>How it works</h1>
+                <WorkCards />
+                <div className="apply-btn">
+                    <Button
+                        color='#0091B2'
+                        border
+                        borderColor='#0091B2'
+                        width='169'
+                        style={{textAlign: 'center'}}
+                    >
+                        Apply here
                     </Button>
                 </div>
             </section>
