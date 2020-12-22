@@ -111,7 +111,6 @@ const InsurancePage = () => {
                         border
                         borderColor='#0091B2'
                         width='169'
-                        style={{textAlign: 'center'}}
                     >
                         Apply here
                     </Button>

@@ -11,6 +11,7 @@ const WorkCard = ({ children }) => {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 2rem;
     `
 
     const Text = styled.p`
@@ -18,6 +19,7 @@ const WorkCard = ({ children }) => {
         font-size: 14px;
         line-height: 22px;
         padding: 0 41px;
+        overflow: hidden;
         
     `
 

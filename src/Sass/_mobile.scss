@@ -164,4 +164,19 @@
             }
         }
     }
+
+    .work-cards{
+        flex-direction: column;
+
+        img{
+            display: none;
+        }
+    }
+
+    .how-it-works{
+        
+        h1{
+            text-align: center;
+        }
+    }
 }

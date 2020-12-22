@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Button = ({ children,color,backgroundColor, width, border,borderColor, style}) => {
+const Button = ({ children,color,backgroundColor, width, border,borderColor }) => {
     // If a color prop is not passed, the default color of the Button is #fff
 
     const returnColor = (val) => {
