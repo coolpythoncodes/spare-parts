@@ -1,14 +1,17 @@
+import { useState,useEffect } from 'react';
+
 import Button from '../Components/Button/Button';
 import NavBar from '../Components/NavBar';
 import NavBarButton from '../Components/Button/NavBarButton';
 import NavLinks from '../Components/NavLinks';
-import { useState,useEffect } from 'react';
+import InsuranceCards from '../Components/Cards/InsuranceCards';
+import WorkCards from '../Components/Cards/WorkCards';
+
 import '../Sass/insurancepage.scss';
 
 import ArrowRight from '../assests/arrow-right.svg';
 import ShowCaseImage from '../assests/showcase.png';
 import CarMaintenanceImage from '../assests/car_maintenance.png';
-import WorkCards from '../Components/Cards/WorkCards';
 
 
 const InsurancePage = () => {
@@ -115,6 +118,11 @@ const InsurancePage = () => {
                         Apply here
                     </Button>
                 </div>
+            </section>
+
+            <section className="insurance-package">
+                <h1>Our Insurance Packages</h1>
+                <InsuranceCards/>
             </section>
         </div>
     );

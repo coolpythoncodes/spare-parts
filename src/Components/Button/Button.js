@@ -50,9 +50,12 @@ const Button = ({ children,color,backgroundColor, width, border,borderColor }) =
         width:${width}px;
         height:50px;
         border-radius:5px;
+        box-shadow: 0px 0px 10px 0px rgba(112, 144, 176, 0.2);
         ${
             border && `border: 1px solid ${returnBorderColor(borderColor)};`
         }
+
+        ${props => props.addCSS}
     `
     return (
         <Button>
