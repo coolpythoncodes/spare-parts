@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import Button from '../Button/Button';
 
-const InsuranceCard = ({ insurancePackage,amount,children }) => {
+const InsuranceCard = ({ insurancePackage,amount,children,active,handleClick }) => {
     
     const InsuranceCard = styled.div`
         display: flex;
@@ -11,9 +11,12 @@ const InsuranceCard = ({ insurancePackage,amount,children }) => {
         min-height: 550px;
         left: 223px;
         top: 2296px;
-        background: #FFFFFF;
+        background: ${active ? ' #0091B2' : '#FFFFFF'};
         box-shadow: 0px 16px 40px 20px rgba(112, 144, 176, 0.2);
         border-radius: 10px;
+        cursor: pointer;
+        user-select: none;
+        color: ${active ? ' #fff' : '#000'} ;
     `
 
     const PackageName = styled.h4`
@@ -46,7 +49,7 @@ const InsuranceCard = ({ insurancePackage,amount,children }) => {
     `
     // rgba(112, 144, 176, 0.2)
     return (
-        <InsuranceCard>
+        <InsuranceCard onClick={handleClick}>
             <PackageName>{ insurancePackage }</PackageName>
             <Amount>{ `N ${amount }`}</Amount>
             <Text>{children}</Text>
