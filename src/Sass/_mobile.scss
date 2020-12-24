@@ -174,10 +174,22 @@
     }
 
     .how-it-works{
-        
+        margin-top: 0px;
         h1{
             text-align: center;
             margin-top: 4rem;
         }
+    }
+
+    .insurance-package{
+
+        h1{
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+        }
+    }
+
+    .insurance-cards{
+        flex-direction: column;
     }
 }
