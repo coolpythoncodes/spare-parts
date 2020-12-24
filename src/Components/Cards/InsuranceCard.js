@@ -1,8 +1,18 @@
+import { useState,useEffect } from 'react';
 import styled, { css } from 'styled-components';
 import Button from '../Button/Button';
 
 const InsuranceCard = ({ insurancePackage,amount,children,active,handleClick }) => {
     
+    const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
+    const breakpoint = 600;
+
+    useEffect(() => {
+        const handleWindowResize = () => setDeviceWidth(window.innerWidth);
+        window.addEventListener('resize', handleWindowResize)
+        return () => window.removeEventListener('resize', handleWindowResize)
+    }, []);
+
     const InsuranceCard = styled.div`
         display: flex;
         flex-direction: column;
@@ -16,7 +26,10 @@ const InsuranceCard = ({ insurancePackage,amount,children,active,handleClick }) 
         border-radius: 10px;
         cursor: pointer;
         user-select: none;
-        color: ${active ? ' #fff' : '#000'} ;
+        color: ${active ? ' #fff' : '#000'};
+        ${
+            deviceWidth <= breakpoint && 'margin-bottom: 3rem;'
+        }
     `
 
     const PackageName = styled.h4`
