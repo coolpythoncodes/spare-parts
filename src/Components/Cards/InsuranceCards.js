@@ -13,6 +13,7 @@ const InsuranceCards = () => {
 
     const [insuranceItems, setInsuranceItems] = useState(insuranceDetails);
     const handleClick = (id) => {
+        setInsuranceItems(insuranceItems.map(item => item.active = false))
         setInsuranceItems(insuranceItems.map((item) => {
             if(item.id === id){
                 item.active = !item.active;
