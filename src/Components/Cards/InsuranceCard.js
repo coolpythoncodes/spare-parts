@@ -13,8 +13,9 @@ const Card = styled.div`
     border-radius: 10px;
     cursor: pointer;
     user-select: none;
-    
-
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  
     @media screen and (max-width: 300px){
         min-height: 450px ;
     }

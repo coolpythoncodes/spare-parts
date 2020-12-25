@@ -5,11 +5,6 @@ import { insuranceDetails } from '../../insuranceInfo';
 
 const InsuranceCards = () => {
 
-    // const [active, setActive] = useState(false);
-    // const handleClick = (id) => {
-        
-    //     setActive(!active);
-    // }
 
     const [insuranceItems, setInsuranceItems] = useState(insuranceDetails);
     const handleClick = (id) => {
@@ -19,7 +14,6 @@ const InsuranceCards = () => {
                 item.active = !item.active;
             } return item;
         }))
-        console.log(insuranceItems)
     }
 
     return (
