@@ -45,7 +45,7 @@ const InsurancePage = () => {
         <NavLinks navLink='About' color='#033C49' />
         <NavLinks navLink='Contact' color='#033C49' />
         <li><NavBarButton text='Register' color='#033C49' backgroundColor='#E5E5E5' border /></li>
-        <li><NavBarButton text='Login' backgroundColor='#f9811e' /></li>
+        <li><NavBarButton text='Login' color="#fff"  backgroundColor='#f9811e' /></li>
     </>
 
     return (
@@ -67,6 +67,7 @@ const InsurancePage = () => {
                             backgroundColor='#0091B3'
                             width='150'
                             height='50'
+                            color='#fff'
                         >
                             Get Started 
                             <img className='arrow-right' src={ArrowRight} alt=""/> 
@@ -76,8 +77,8 @@ const InsurancePage = () => {
                             <Button 
                                 color='#FE895D' 
                                 width='114'
-                                border
                                 borderColor='#FE895D'
+                                border
                             >
                                 Make Inquiry
                             </Button>
@@ -99,6 +100,7 @@ const InsurancePage = () => {
                     <Button 
                         backgroundColor='#0091B3'
                         width='133'
+                        color='#fff'
                     >
                         See Packages
                     </Button>

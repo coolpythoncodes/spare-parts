@@ -44,26 +44,6 @@ const InsuranceCards = () => {
                     ) 
                 
             })}
-            {/* <InsuranceCard 
-                insurancePackage='Silver'
-                amount='5,000'
-            >
-                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-            </InsuranceCard>
-
-            <InsuranceCard 
-                insurancePackage='Gold'
-                amount='5,000'
-            >
-                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-            </InsuranceCard>
-
-            <InsuranceCard 
-                insurancePackage='Diamond'
-                amount='5,000'
-            >
-                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-            </InsuranceCard> */}
         </div>
     );
 }

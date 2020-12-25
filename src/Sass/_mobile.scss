@@ -23,10 +23,15 @@
 
     .how-it-works{
         width: 90%;
+        margin-bottom: 100px;
         
         h1{
             text-align: center;
         }
+    }
+
+    .insurance-cards{
+        width: 90%;
     }
 
 }
@@ -207,8 +212,18 @@
 
 @media screen and (max-width: 300px){
    .how-it-works{
+
     h1{
         font-size: 25px;
     }
+
    }
+
+   .insurance-package{
+
+        h1{
+            font-size: 1.1rem;
+            line-height: 1.4rem;
+        }
+    }
 }
