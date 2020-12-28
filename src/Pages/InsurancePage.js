@@ -13,6 +13,10 @@ import ArrowRight from '../assests/arrow-right.svg';
 import ShowCaseImage from '../assests/showcase.png';
 import CarMaintenanceImage from '../assests/car_maintenance.png';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
+
 
 const InsurancePage = () => {
 
@@ -126,6 +130,59 @@ const InsurancePage = () => {
                 <h1>Our Insurance Packages</h1>
                 <InsuranceCards/>
             </section>
+
+            <footer>
+                <div className="footer-container">
+                    <div className="social">
+                        <h1>Logo</h1>
+                        <div className="social-links">
+                            <a href="/" className='social-icons' ><FontAwesomeIcon icon={faFacebookF} size='lg' /></a>
+                            <a href="/" className='social-icons'><FontAwesomeIcon icon={faInstagram} size='lg' /></a>
+                            <a href="/" className='social-icons'><FontAwesomeIcon icon={faTwitter} size='lg' /></a>
+                        </div>
+                    </div>
+
+                    <div className="footer-links">
+                        <div className="contact">
+                            <h1>Contact</h1>
+                            <ul>
+                                <li><a href="/">About</a></li>
+                            </ul>
+                        </div>
+                        <div className="company">
+                            <h1>Company</h1>
+                            <ul>
+                                <li><a href="/">Insurance</a></li>
+                                <li><a href="/">Service Stations</a></li>
+                                <li><a href="/">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div className="help">
+                            <h1>Help</h1>
+                            <ul>
+                                <li><a href="/">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="footer-form">
+                        
+                        <form action="">
+                            <h1 className='form-heading'>Inquire</h1>
+                            <input type="email" name="" id="" placeholder="Email"/>
+                            <input type="text" name="" id="" placeholder='Full Name'/>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                            <Button
+                                border
+                                borderColor='#fff'
+                                width='100%'
+                            >
+                                SEND MESSAGE
+                            </Button>
+                        </form>
+                    </div>
+                </div>
+            </footer>
         </div>
     );
 }
